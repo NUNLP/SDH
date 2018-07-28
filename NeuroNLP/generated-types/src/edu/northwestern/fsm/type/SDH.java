@@ -1,0 +1,145 @@
+
+
+/* First created by JCasGen Sat Mar 31 09:42:11 CDT 2018 */
+package edu.northwestern.fsm.type;
+
+import org.apache.uima.jcas.JCas; 
+import org.apache.uima.jcas.JCasRegistry;
+import org.apache.uima.jcas.cas.TOP_Type;
+
+import de.tudarmstadt.ukp.dkpro.core.api.ner.type.NamedEntity;
+
+
+/** SDH annotation
+ * Updated by JCasGen Sat Mar 31 09:42:11 CDT 2018
+ * XML source: /Users/wthompson/Code/SDH NLP Development Project/code/NeuroNLP/generated-types/resources/edu/northwestern/fsm/type/sdh-types.xml
+ * @generated */
+public class SDH extends NamedEntity {
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static int typeIndexID = JCasRegistry.register(SDH.class);
+  /** @generated
+   * @ordered 
+   */
+  @SuppressWarnings ("hiding")
+  public final static int type = typeIndexID;
+  /** @generated
+   * @return index of the type  
+   */
+  @Override
+  public              int getTypeIndexID() {return typeIndexID;}
+ 
+  /** Never called.  Disable default constructor
+   * @generated */
+  protected SDH() {/* intentionally empty block */}
+    
+  /** Internal - constructor used by generator 
+   * @generated
+   * @param addr low level Feature Structure reference
+   * @param type the type of this Feature Structure 
+   */
+  public SDH(int addr, TOP_Type type) {
+    super(addr, type);
+    readObject();
+  }
+  
+  /** @generated
+   * @param jcas JCas to which this Feature Structure belongs 
+   */
+  public SDH(JCas jcas) {
+    super(jcas);
+    readObject();   
+  } 
+
+  /** @generated
+   * @param jcas JCas to which this Feature Structure belongs
+   * @param begin offset to the begin spot in the SofA
+   * @param end offset to the end spot in the SofA 
+  */  
+  public SDH(JCas jcas, int begin, int end) {
+    super(jcas);
+    setBegin(begin);
+    setEnd(end);
+    readObject();
+  }   
+
+  /** 
+   * <!-- begin-user-doc -->
+   * Write your own initialization here
+   * <!-- end-user-doc -->
+   *
+   * @generated modifiable 
+   */
+  private void readObject() {/*default - does nothing empty block */}
+     
+ 
+    
+  //*--------------*
+  //* Feature: side
+
+  /** getter for side - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public Side getSide() {
+    if (SDH_Type.featOkTst && ((SDH_Type)jcasType).casFeat_side == null)
+      jcasType.jcas.throwFeatMissing("side", "edu.northwestern.fsm.type.SDH");
+    return (Side)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SDH_Type)jcasType).casFeatCode_side)));}
+    
+  /** setter for side - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setSide(Side v) {
+    if (SDH_Type.featOkTst && ((SDH_Type)jcasType).casFeat_side == null)
+      jcasType.jcas.throwFeatMissing("side", "edu.northwestern.fsm.type.SDH");
+    jcasType.ll_cas.ll_setRefValue(addr, ((SDH_Type)jcasType).casFeatCode_side, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: thickness
+
+  /** getter for thickness - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public Measure getThickness() {
+    if (SDH_Type.featOkTst && ((SDH_Type)jcasType).casFeat_thickness == null)
+      jcasType.jcas.throwFeatMissing("thickness", "edu.northwestern.fsm.type.SDH");
+    return (Measure)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((SDH_Type)jcasType).casFeatCode_thickness)));}
+    
+  /** setter for thickness - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setThickness(Measure v) {
+    if (SDH_Type.featOkTst && ((SDH_Type)jcasType).casFeat_thickness == null)
+      jcasType.jcas.throwFeatMissing("thickness", "edu.northwestern.fsm.type.SDH");
+    jcasType.ll_cas.ll_setRefValue(addr, ((SDH_Type)jcasType).casFeatCode_thickness, jcasType.ll_cas.ll_getFSRef(v));}    
+   
+    
+  //*--------------*
+  //* Feature: convexity
+
+  /** getter for convexity - gets 
+   * @generated
+   * @return value of the feature 
+   */
+  public boolean getConvexity() {
+    if (SDH_Type.featOkTst && ((SDH_Type)jcasType).casFeat_convexity == null)
+      jcasType.jcas.throwFeatMissing("convexity", "edu.northwestern.fsm.type.SDH");
+    return jcasType.ll_cas.ll_getBooleanValue(addr, ((SDH_Type)jcasType).casFeatCode_convexity);}
+    
+  /** setter for convexity - sets  
+   * @generated
+   * @param v value to set into the feature 
+   */
+  public void setConvexity(boolean v) {
+    if (SDH_Type.featOkTst && ((SDH_Type)jcasType).casFeat_convexity == null)
+      jcasType.jcas.throwFeatMissing("convexity", "edu.northwestern.fsm.type.SDH");
+    jcasType.ll_cas.ll_setBooleanValue(addr, ((SDH_Type)jcasType).casFeatCode_convexity, v);}    
+  }
+
+    
